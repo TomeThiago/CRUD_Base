@@ -1,0 +1,14 @@
+.DS_Store
+.env
+
+*.log
+
+node_modules/
+dist
+
+.eslintcache
+
+yarn-debug.log*
+yarn-error.log*
+
+db.sql

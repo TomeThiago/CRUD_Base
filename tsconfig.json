@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "lib": ["esnext"],
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".docker"
+  ]
+}
