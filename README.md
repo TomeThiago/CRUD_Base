@@ -45,19 +45,21 @@ DATABASE_PASSWORD=
 DATABASE_NAME=
 ```
 
-Etapa 5 - Criar o banco de dados manualmente ou rodar o código a baixo para usar o banco de dados do docker.
+Etapa 4 - Criar o banco de dados manualmente ou rodar o código a baixo para usar o banco de dados do docker.
 
 ```bash
 docker compose --env-file .env up db -d
 ```
 
-Etapa 6 - Rodar as migrations para criar as tabelas.
+> :warning: **Caso estiver usando o docker compose:**: Antes do passo 6 execute o comando: `docker exec -it crud-api bash` para entrar no container.
+
+Etapa 5 - Rodar as migrations para criar as tabelas.
 
 ```bash
 yarn migration:run
 ```
 
-Etapa 7 - Subir a aplicação
+Etapa 6 - Subir a aplicação
 
 ```bash
 yarn start:dev
